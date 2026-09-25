@@ -1,0 +1,62 @@
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+
+    border-top:  #1E3A8A solid;
+    border-radius: 30px;
+    
+}
+
+.students{
+    margin-right: auto;
+    font-size: 40px;
+    font-family: 40px;
+    color: black;
+    cursor: pointer;
+}
+.Restaurant,
+.map,
+.favorites,
+.search,
+.profile
+{
+    margin: 0 20px ;
+    text-decoration: none;
+    color: #1E3A8A;
+}
+.search{
+    margin-left: auto;
+}
+.profile{
+    padding-left: 20px;
+}
+
+
+.img {
+    width: 100%;
+}
+
+.img img {
+    width: 100%;
+    height: 500px;
+    display: block;
+}
+.content{
+    border: solid;
+  border-radius: 30px;
+  width: 500px;
+  height: 150px;
+      position: relative;
+    top: -200px;
+    background: white;
+  border: none;
+  margin-left: 20px;
+
+}
+
+
+
+
