@@ -1,68 +1,59 @@
-
 .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px 40px;
-
-    border:  #1E3A8A solid;
-    border-radius: 30px;
-    
+    padding: 15px 30px;
+    border: 2px solid #1E3A8A;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.students{
+.students {
     margin-right: auto;
     font-size: 40px;
-    font-family: 40px;
-    color: black;
+    color: #1E3A8A;
     cursor: pointer;
 }
+
 .Restaurant,
 .map,
 .favorites,
 .search,
-.profile
-{
-    margin: 0 20px ;
-    text-decoration: none;
+.profile {
+    margin: 0 20px;
     color: #1E3A8A;
-    font-size: 30px;
+    font-size: 20px;
+    text-decoration: none;
 }
-.search{
+
+.search {
     margin-left: auto;
 }
-.profile{
+
+.profile {
     padding-left: 20px;
 }
 
-
 .img {
     width: 100%;
+    position: relative;
 }
 
 .img img {
     width: 100%;
     height: 600px;
     display: block;
+    object-fit: cover;
 }
-.content{
-    border: solid;
-  border-radius: 30px;
-  width: 100rem;
-  height: 100px;
-      position: relative;
-    top: -200px;
-    background: white;
-  border: none;
-  margin-left: 20px;
 
-}
-.h1{
-    margin-left: 20px;
-  font-size: 50px;
-  color: white;
-    position: relative;
-  top: -400px;
+.hero-title {
+    position: absolute;
+    top: -400px;
+    left: 50%;
+    z-index: 2;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 45px;
+    text-align: center;
 }
 
 .content {
@@ -70,17 +61,22 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
-    margin-top: 20px;
+    width: 100%;
+    height: 100px;
     margin-left: 20px;
+    position: relative;
+    top: -200px;
+    background: white;
+    border-radius: 30px;
 }
 
 .search-input {
-    border-radius: 9px;
-    height: 30px;
     width: 30rem;
-    border: none;
-    margin-left: 20px;
+    height: 30px;
     margin-top: 10px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 9px;
 }
 
 .filter {
@@ -89,41 +85,26 @@
 }
 
 .filter select {
-    height: 40px;
     width: 650px;
-    border-radius: 9px;
-    padding: 0 15px;
-    font-size: 16px;
+    height: 40px;
     margin-left: 20px;
+    padding: 0 15px;
+    border-radius: 9px;
+    font-size: 16px;
 }
 
 .second-search {
-    height: 70px;
     width: 10rem;
-    border-radius: 20px;
-    gap: 10px;
+    height: 70px;
+    margin-left: 4rem;
     position: relative;
     top: -20px;
+    border: none;
+    border-radius: 20px;
     color: white;
-    background-color:#1E3A8A ;
-    margin-left: 4rem;
-    
+    background-color: #1E3A8A;
 }
 
-.img {
-    position: relative;
-}
-
-.hero-title {
-    position: absolute;
-    top: -400px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    font-size: 45px;
-    text-align: center;
-    z-index: 2;
-}
 .menu-buttons {
     display: flex;
     justify-content: center;
@@ -135,39 +116,43 @@
 .weekly-menu {
     width: 800px;
     height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #1E3A8A;
+    border-radius: 10px;
+    color: #1E3A8A;
+    background-color: white;
+    text-decoration: none;
+    top: -80px;
+    position: relative;
+}
+
+.daily-menu:hover,
+.weekly-menu:hover {
     color: white;
     background-color: #1E3A8A;
-    position: relative;
-    top: -70px;
-    border-radius: 10px;
-
 }
+
 
 .p {
     position: relative;
     top: -70px;
     left: 20px;
     color: #1E3A8A;
-    
 }
 
 .by {
-    width: 100%;
-    box-sizing: border-box;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 10px;
-    padding-right: 20px;
+    width: 100%;
     height: 30px;
+    box-sizing: border-box;
+    padding-right: 20px;
     position: relative;
     top: -130px;
-}
-
-.restaurants {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
 }
 
 .restaurant-cards {
@@ -175,12 +160,14 @@
     justify-content: center;
     gap: 25px;
     position: relative;
-    top: -80;
+    top: -80px;
 }
 
 .restaurant-card {
     width: 520px;
-    text-align: center;
+    text-align: left;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .restaurant-card img {
@@ -191,10 +178,26 @@
 }
 
 .restaurant-card h2 {
-    color: #1E3A8A;
     margin: 10px 0 5px;
+    color: #1E3A8A;
 }
 
 .restaurant-card p {
     margin: 0;
+    color: #555;
+}
+
+.Restaurant:hover,
+.map:hover,
+.favorites:hover,
+.search:hover,
+.profile:hover {
+    color: #162D6B;
+}
+
+.daily-menu:hover,
+.weekly-menu:hover,
+.second-search:hover {
+    opacity: 0.85;
+    cursor: pointer;
 }
