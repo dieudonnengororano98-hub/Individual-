@@ -1,0 +1,157 @@
+body {
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    border: 2px solid #B9D7FF;
+    border-radius: 10px;
+}
+
+.students {
+    font-size: 30px;
+    color: #1E3A8A;
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+}
+
+.back-list {
+    display: inline-block;
+    margin: 10px 0 0 20px;
+    color: #1E3A8A;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.restaurant-title {
+    margin: 20px;
+    color: #1E3A8A;
+}
+
+.menu-buttons {
+    display: flex;
+    width: 800px;
+    height: 70px;
+    margin: 20px auto;
+    border: 2px solid #D6E5F5;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.daily-menu,
+.weekly-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    color: #1E3A8A;
+    background-color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.daily-menu {
+    
+    background-color: white;
+}
+
+.weekly-menu {
+    border-bottom: 3px solid #1E8AFF;
+}
+
+.daily-menu:hover,
+.weekly-menu:hover {
+    color: #B9D7FF;
+    background-color: white;
+}
+
+.week {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 800px;
+    margin: 25px auto;
+}
+
+.week h2 {
+    margin: 0;
+    color: #1E3A8A;
+    font-size: 22px;
+}
+
+.week h2 span {
+    font-weight: normal;
+}
+
+.week-button {
+    width: 45px;
+    height: 40px;
+    border: 2px solid #D6E5F5;
+    border-radius: 10px;
+    background-color: white;
+    color: #3B6EA8;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.weekly-menu-list {
+    width: 800px;
+    margin: 30px auto;
+    border: 2px solid #D6E5F5;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.day {
+    display: flex;
+    min-height: 80px;
+    border-bottom: 2px solid #D6E5F5;
+}
+
+.day:last-child {
+    border-bottom: none;
+}
+
+.day-name {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 120px;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    background-color: #F5F9FF;
+    color: #1E3A8A;
+}
+
+.day-name strong {
+    font-size: 18px;
+}
+
+.day-name span {
+    font-size: 16px;
+}
+
+.food {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 20px;
+    color: #3B6EA8;
+    font-size: 18px;
+}
+
