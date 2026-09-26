@@ -1,0 +1,147 @@
+body {
+    margin: 10px;
+    
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    border: 2px solid #B9D7FF;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.students {
+    font-size: 30px;
+    color: #1E3A8A;
+    cursor: pointer;
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+}
+
+.back-list {
+    display: inline-block;
+    color: #1E3A8A;
+    text-decoration: none;
+    margin-left: 20px;
+    position: relative;
+    top: 10px; 
+    font-size: 24px;
+    
+}
+
+.restaurant-title {
+    color: #1E3A8A;
+    margin: 20px;
+}
+
+
+.menu-buttons {
+    display: flex;
+    width: 800px;
+    height: 70px;
+    margin: 20px auto;
+    border: 2px solid #D6E5F5;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.daily-menu,
+.weekly-menu {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1E3A8A;
+    background-color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.daily-menu {
+    border-right: 2px solid #D6E5F5;
+    border-bottom: 3px solid #1E8AFF;
+}
+
+
+.daily-menu:hover,
+.weekly-menu:hover {
+    color: #1E3A8A;
+    background-color: white;
+}
+
+.date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 25px auto;
+}
+
+.date h2 {
+    margin: 0;
+    color: #1E3A8A;
+    font-size: 22px;
+}
+
+.date-button {
+    width: 45px;
+    height: 40px;
+    border: 2px solid #D6E5F5;
+    border-radius: 10px;
+    background-color: white;
+    color: #3B6EA8;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.menu-section {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.menu-section h2 {
+    margin-bottom: 15px;
+    color: #1E3A8A;
+    font-size: 22px;
+}
+
+.food-list {
+    border: 2px solid #D6E5F5;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.food-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 2px solid #D6E5F5;
+    color: #3B6EA8;
+    font-size: 18px;
+}
+
+
+.food-item:last-child {
+    border-bottom: none;
+}
+
+.food-item span:last-child {
+    font-weight: bold;
+}   
+
+
