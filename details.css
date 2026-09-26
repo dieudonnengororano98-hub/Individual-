@@ -80,12 +80,14 @@
 }
 
 .favorite-button {
+    display: inline-block;
     padding: 15px 25px;
     border: 2px solid #B9D7FF;
     border-radius: 10px;
     background-color: white;
     color: #3B82D0;
     font-size: 18px;
+    text-decoration: none;
     cursor: pointer;
 }
 
@@ -108,19 +110,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #3B6EA8;
+    border: 2px solid #B9D7FF;
     border-radius: 10px;
-    color: #1E3A8A;
+    color: #3B82D0;
     background-color: white;
     text-decoration: none;
 }
 
 
+
 .daily-menu:hover,
 .weekly-menu:hover {
-    color: white;
-    background-color: #3B6EA8;
+    color: #3B82D0;
+    background-color: white;
 }
+
 
 .restaurant-info {
     display: flex;
