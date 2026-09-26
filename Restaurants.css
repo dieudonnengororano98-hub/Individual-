@@ -2,10 +2,12 @@
     display: flex;
     align-items: center;
     padding: 15px 30px;
-    border: 2px solid #1E3A8A;
+    border: 2px solid #B9D7FF;
+    padding: 15px 30px;
     border-radius: 15px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 .students {
     margin-right: auto;
@@ -75,7 +77,7 @@
     height: 30px;
     margin-top: 10px;
     margin-left: 20px;
-    border: none;
+    border: none ;
     border-radius: 9px;
 }
 
@@ -119,7 +121,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #1E3A8A;
+    border: 2px solid #D6E5F5;
     border-radius: 10px;
     color: #1E3A8A;
     background-color: white;
@@ -131,7 +133,7 @@
 .daily-menu:hover,
 .weekly-menu:hover {
     color: white;
-    background-color: #1E3A8A;
+    background-color: #D6E5F5;
 }
 
 
