@@ -10,7 +10,7 @@ body {
     padding: 15px 30px;
     border: 2px solid #B9D7FF;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    
 }
 
 .students {
@@ -108,12 +108,12 @@ body {
     cursor: pointer;
 }
 
-.menu-section {
+.menu {
     max-width: 800px;
     margin: 30px auto;
 }
 
-.menu-section h2 {
+.menu h2 {
     margin-bottom: 15px;
     color: #1E3A8A;
     font-size: 22px;
@@ -143,5 +143,4 @@ body {
 .food-item span:last-child {
     font-weight: bold;
 }   
-
 
