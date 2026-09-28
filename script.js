@@ -1,0 +1,43 @@
+const apiBaseUrl = "https://media2.edu.metropolia.fi/restaurant/api/v1";
+
+const getRestaurants = async () => {
+  const response = await fetch(apiBaseUrl + "/restaurants");
+  return await response.json();
+};
+
+const getDailyMenu = async (id) => {
+  const response = await fetch(
+    apiBaseUrl + "/restaurants/daily/" + id + "/en"
+  );
+  return await response.json();
+};
+
+const showRestaurants = async () => {
+  const restaurants = await getRestaurants();
+  const list = document.querySelector("#restaurants");
+
+  restaurants.forEach((restaurant) => {
+    const div = document.createElement("div");
+
+    div.innerHTML = `
+      <h3>${restaurant.name}</h3>
+      <button>Get daily menu</button>
+      <div class="daily-menu-result"></div>
+    `;
+
+    list.appendChild(div);
+
+    div.querySelector("button").addEventListener("click", async () => {
+      const menu = await getDailyMenu(restaurant._id);
+      const result = div.querySelector(".daily-menu-result");
+
+      result.innerHTML = "";
+
+      menu.courses.forEach((course) => {
+        result.innerHTML += `<p>${course.name}</p>`;
+      });
+    });
+  });
+};
+
+showRestaurants();
