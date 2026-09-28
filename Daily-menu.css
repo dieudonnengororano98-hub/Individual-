@@ -32,20 +32,18 @@ body {
     background-color: black;
 }
 
-.back-list {
-    display: inline-block;
-    color: #1E3A8A;
-    text-decoration: none;
-    margin-left: 20px;
-    position: relative;
-    top: 10px; 
-    font-size: 24px;
-    
-}
+
 
 .restaurant-title {
     color: #1E3A8A;
     margin: 20px;
+}
+
+#restaurants button {
+    padding: 10px 20px;
+    border: 2px solid;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 
@@ -119,8 +117,26 @@ body {
     font-size: 22px;
 }
 
-.food-list {
+#restaurants,
+#restaurants h2,
+#restaurants button{
+     width: 50%;
+    align-items: center;
+    color: #1E3A8A;
+    background-color: white;
+    text-decoration: none;
+    font-size: 20px;
+    
+
+}
+
+#restaurants button{
     border: 2px solid #D6E5F5;
+
+}
+
+.food-list {
+    border: none #B9D7FF;
     border-radius: 10px;
     overflow: hidden;
 }
