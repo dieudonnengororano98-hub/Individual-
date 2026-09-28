@@ -77,8 +77,9 @@
     height: 30px;
     margin-top: 10px;
     margin-left: 20px;
-    border: none ;
+    border: none  #D6E5F5 ;
     border-radius: 9px;
+    
 }
 
 .filter {
@@ -93,6 +94,8 @@
     padding: 0 15px;
     border-radius: 9px;
     font-size: 16px;
+    border: 2px solid #B9D7FF;
+    color: #3B6EA8;
 }
 
 .second-search {
@@ -104,7 +107,7 @@
     border: none;
     border-radius: 20px;
     color: white;
-    background-color: #1E3A8A;
+    background-color: #3B6EA8;
 }
 
 .menu-buttons {
