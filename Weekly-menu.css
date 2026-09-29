@@ -35,6 +35,9 @@ body {
     color: #1E3A8A;
 }
 
+
+
+
 .menu-buttons {
     display: flex;
     width: 800px;
@@ -56,6 +59,30 @@ body {
     text-decoration: none;
     font-size: 20px;
 }
+
+
+
+#restaurants,
+#restaurants h2,
+#restaurants button{
+     width: 50%;
+    align-items: center;
+    color: #1E3A8A;
+    background-color: white;
+    text-decoration: none;
+    font-size: 20px;
+    
+
+}
+
+#restaurants button{
+    border: 2px solid #D6E5F5;
+    height: 50px;
+    border-radius: 9px;
+
+}
+
+
 
 .daily-menu {
     
