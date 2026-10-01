@@ -21,22 +21,58 @@ const showRestaurants = async () => {
 
     div.innerHTML = `
       <h3>${restaurant.name}</h3>
-      <button>Get daily menu</button>
+
+      <button class="daily-menu-button">
+        Get daily menu
+      </button>
+
+      <button class="favorite-button">
+        Favorite
+      </button>
+
       <div class="daily-menu-result"></div>
     `;
 
     list.appendChild(div);
 
-    div.querySelector("button").addEventListener("click", async () => {
-      const menu = await getDailyMenu(restaurant._id);
-      const result = div.querySelector(".daily-menu-result");
+    
+    div
+      .querySelector(".daily-menu-button")
+      .addEventListener("click", async () => {
+        const menu = await getDailyMenu(restaurant._id);
+        const result = div.querySelector(".daily-menu-result");
 
-      result.innerHTML = "";
+        result.innerHTML = "";
 
-      menu.courses.forEach((course) => {
-        result.innerHTML += `<p>${course.name}</p>`;
+        menu.courses.forEach((course) => {
+          result.innerHTML += `<p>${course.name}</p>`;
+        });
       });
-    });
+
+  
+    div
+      .querySelector(".favorite-button")
+      .addEventListener("click", () => {
+        const favorites =
+          JSON.parse(localStorage.getItem("favorites")) || [];
+
+        const alreadyFavorite = favorites.some(
+          (favorite) => favorite._id === restaurant._id
+        );
+
+        if (!alreadyFavorite) {
+          favorites.push(restaurant);
+
+          localStorage.setItem(
+            "favorites",
+            JSON.stringify(favorites)
+          );
+
+          console.log("Favorite saved:", restaurant.name);
+        } else {
+          console.log("Already a favorite:", restaurant.name);
+        }
+      });
   });
 };
 
