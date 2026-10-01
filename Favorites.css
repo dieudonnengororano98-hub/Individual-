@@ -103,3 +103,15 @@ h1 {
     font-size: 14px;
 }
 
+.remove-favorite-button {
+      width: 50%;
+    align-items: center;
+    color: #1E3A8A;
+    background-color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border: 2px solid #D6E5F5;
+    height: 40px ;
+    border-radius: 6px;
+
+}
