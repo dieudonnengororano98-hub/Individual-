@@ -1,116 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link  rel="stylesheet" href="./Restaurants.css">
-    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./Restaurants.css">
     <title>Restaurants</title>
-
 </head>
+
 <body>
+
     <div class="container">
-        <div class="students">StudentEats</div>
-                <a class="Restaurant" href="./Restaurants.html">Restaurants</a>
-                <a class="map" href="./map.html">map</a>
-                <a class="favorites" href="./favorites.html">Favorites</a>
-                <a class="search" href="./search.html">Search</a>
-                <a class="profile" href="./profile.html">Profile</a>
+
+        <div class="students">
+            StudentEats
+        </div>
+
+        <a class="Restaurant" href="./Restaurants.html">
+            Restaurants
+        </a>
+
+        <a class="map" href="./map.html">
+            Map
+        </a>
+
+        <a class="favorites" href="./favorites.html">
+            Favorites
+        </a>
+
+        <a class="profile" href="./profile.html">
+            Profile
+        </a>
+
     </div>
 
-   
-    
     <div class="img">
-        <img src="./public/hikaru-sano-M0meqCjZEKg-unsplash.jpg" alt="Restaurant">
 
+        <img
+            src="./public/hikaru-sano-M0meqCjZEKg-unsplash.jpg"
+            alt="Restaurant"
+        >
 
         <div class="content">
+
             <h1 class="hero-title">
-    Find Your Favorite Restaurant<br>
-    in Finland
-</h1>
- 
+                Find Your Favorite Restaurant<br>
+                in Finland
+            </h1>
 
+            <input
+                id="search-input"
+                class="search-input"
+                type="text"
+                placeholder="Search Restaurants"
+            >
 
-    <input class="search-input" type="text" placeholder="Search Restaurants">
+            <div class="filter">
 
-    <div class="filter">
-        <select>
-            <option value="">All cities</option>
-            <option value="Helsinki">Helsinki</option>
-            <option value="Espoo">Espoo</option>
-            <option value="Vantaa">Vantaa</option>
-            <option value="Tampere">Tampere</option>
-            <option value="Turku">Turku</option>
-        </select>
+                <select id="city-filter">
+                    <option value="">All cities</option>
+                </select>
 
-        <select>
-            <option value="">All providers</option>
-            <option value="Wolt">Wolt</option>
-            <option value="Foodora">Foodora</option>
-            <option value="Restaurants">Restaurants</option>
-        </select>
+                <select id="provider-filter">
+                    <option value="">All providers</option>
+                </select>
 
-        <button class="second-search">Search</button>
+                <button
+                    id="search-button"
+                    class="second-search"
+                    type="button"
+                >
+                    Search
+                </button>
 
-    </div>
-
-</div>
-
-<div class="menu-buttons">
-    <a class="daily-menu" href="./Daily-menu.html">Daily menu</a>
-    <a class="weekly-menu" href="./Weekly-menu.html">Weekly menu</a>
-</div>
-
-<h1 class="p">Restaurants</h1>
-
-<div class="by">
-    <p class="p-1">Sort by</p>
-    <select>
-    <option value="">Default</option>
-    <option value="rating">Rating</option>
-    <option value="price-low">Price: Low to High</option>
-    <option value="price-high">Price: High to Low</option>
-    <option value="name">Name: A to Z</option>
-    <option value="distance">Distance</option>
-</select>
-
-</div>
-
-<div class="restaurant-cards">
-
-    <div class="restaurant-card">
-        <img src="./public/alexandru-bogdan-ghita-UeYkqQh4PoI-unsplash.jpg" alt="Restaurant">
-        <h2>Myyrimäki Student </h2>
-        <p>Finnish food and drinks</p>
-    </div>
-
-    <div class="restaurant-card">
-        <img src="./public/edward-howell-vvUy1hWVYEA-unsplash.jpg" alt="Restaurant">
-        <h2>Leppävaara Student restaurant</h2>
-        <p>Pizza and Italian food</p>
-    </div>
-
-    <div class="restaurant-card">
-        <img src="./public/fabio-alves-dGnX4WwRMw4-unsplash.jpg" alt="Restaurant">
-        <h2>Arabia Student restaurant</h2>
-        <p>Burgers and fast food</p>
-    </div>
-
-</div>
-
-
-
-
-
-
-
-       
-
+            </div>
 
         </div>
 
     </div>
-    
+
+    <div class="menu-buttons">
+
+        <a
+            class="daily-menu"
+            href="./Daily-menu.html"
+        >
+            Daily menu
+        </a>
+
+        <a
+            class="weekly-menu"
+            href="./Weekly-menu.html"
+        >
+            Weekly menu
+        </a>
+
+    </div>
+
+    <h1 class="p">
+        Restaurants
+    </h1>
+
+    <div class="by">
+
+        <p class="p-1">
+            Sort by
+        </p>
+
+        <select id="sort-filter">
+
+            <option value="">
+                Default
+            </option>
+
+            <option value="name">
+                Name: A to Z
+            </option>
+
+            <option value="city">
+                City
+            </option>
+
+        </select>
+
+    </div>
+
+    <div
+        id="restaurant-list"
+        class="restaurant-cards"
+    ></div>
+
+    <script src="./Restaurants.js"></script>
+
 </body>
+
 </html>
