@@ -1,25 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
     <title>Map</title>
-    <link rel="stylesheet" href="./Map.css">
+
+    <link
+        rel="stylesheet"
+        href="./Map.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    >
+
 </head>
 
 <body>
 
     <div class="container">
 
-        <div class="students">StudentEats</div>
+       
 
         <div class="menu-icon">
-            <span></span>
-            <span></span>
-            <span></span>
+
+           
+
         </div>
 
     </div>
+
 
     <div class="page">
 
@@ -28,42 +46,54 @@
             <div class="top">
 
                 <div>
-                    <label>City</label>
-                    <select>
-                        <option>All cities</option>
-                         <option value="Helsinki">Helsinki</option>
-                        <option value="Espoo">Espoo</option>
-                        <option value="Vantaa">Vantaa</option>
-                        <option value="Tampere">Tampere</option>
-                        <option value="Turku">Turku</option>
+
+                    <label for="city-filter">
+                       
+                    </label>
+
+                    <select id="city-filter">
+
+                        <option value="">
+                            All cities
+                        </option>
+
                     </select>
+
                 </div>
+
 
                 <div>
-                    <label>Service provider</label>
-                    <select>
-                        <option>All providers</option>
-                        <option value="Wolt">Wolt</option>
-                        <option value="Foodora">Foodora</option>
-                        <option value="Restaurants">Restaurants</option>
-                                   
- 
+
+                    <label for="provider-filter">
+                       
+                    </label>
+
+                    <select id="provider-filter">
+
+                        <option value="">
+                            All providers
+                        </option>
+
                     </select>
+
                 </div>
 
             </div>
 
-            <div class="map">
 
-                <iframe
-                    src="https://www.openstreetmap.org/export/embed.html?...">
-                </iframe>
-
-            </div>
+            <div id="map"></div>
 
         </div>
 
     </div>
 
+
+    <script
+        src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+    </script>
+
+    <script src="./Map.js"></script>
+
 </body>
+
 </html>
